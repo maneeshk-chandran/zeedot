@@ -2795,6 +2795,7 @@ ul {
 }
 
 .about-one__text-2 {
+  text-align: justify;
   font-size: 18px;
   line-height: 34px;
 }
