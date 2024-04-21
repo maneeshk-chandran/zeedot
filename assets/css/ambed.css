@@ -12425,7 +12425,7 @@ body.boxed-wrapper {
   align-items: center;
 }
 
-.cart-table .product-box .img-box {
+.cart-table .product-box -box {
   position: relative;
   display: block;
   width: 120px;
@@ -12434,7 +12434,7 @@ body.boxed-wrapper {
   margin-right: 35px;
 }
 
-.cart-table .product-box .img-box img {
+.cart-table .product-box -box img {
   width: 100%;
   border: 1px solid var(--ambed-bdr-color);
 }
@@ -12960,3 +12960,4 @@ body.boxed-wrapper {
   font-weight: 400;
   padding-left: 33px;
 }
+
