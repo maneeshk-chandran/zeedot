@@ -379,9 +379,9 @@
     });
   }
 
-  if ($(".img-popup").length) {
+  if ($("-popup").length) {
     var groups = {};
-    $(".img-popup").each(function () {
+    $("-popup").each(function () {
       var id = parseInt($(this).attr("data-group"), 10);
 
       if (!groups[id]) {
@@ -936,6 +936,21 @@
   if ($('select:not(.ignore)').length) {
     $('select:not(.ignore)').niceSelect();
   }
+
+//  if($(document).ready(function()
+// {
+//   $('img-popup').bind('contextmenu',function(e){
+//     return false;
+//   });
+// }));
+
+
+if($(document.oncontextmenu=function(){
+  return false;
+}));
+
+
+      
 
 
 })(jQuery);
