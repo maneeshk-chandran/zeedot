@@ -360,25 +360,25 @@
                                     <div class="row">
                                         <div class="col-xl-6">
                                             <div class="comment-form__input-box">
-                                                <input type="text" placeholder="Your name" name="name">
+                                                <input type="text" placeholder="Your name" name="name" required>
                                                 <span id="name-error"></span>
                                             </div>
                                         </div>
                                         <div class="col-xl-6">
                                             <div class="comment-form__input-box">
-                                                <input type="email" placeholder="Email address" name="email">
+                                                <input type="email" placeholder="Email address" name="email" required>
                                                 <span id="email-error"></span>
                                             </div>
                                         </div>
                                         <div class="col-xl-6">
                                             <div class="comment-form__input-box">
-                                                <input type="text" placeholder="Phone number" name="phone">
+                                                <input type="text" placeholder="Phone number" name="phone" required>
                                                 <span id="phone-error"></span>
                                             </div>
                                         </div>
                                         <div class="col-xl-6">
                                             <div class="comment-form__input-box">
-                                                <input type="text" placeholder="Subject" name="subject">
+                                                <input type="text" placeholder="Subject" name="subject" required>
                                                 <span id="subject-error"></span>
                                             </div>
                                         </div>
@@ -675,45 +675,7 @@
           }
       });
   </script>
-  <script>
-    function validate() {
-        var name = document.getElementsByName('name').value.trim()
-        var email = document.getElementsByName('email').value.trim()
-        var phone = document.getElementsByName('phone').value.trim()
-        var subject = document.getElementsByName('subject').value.trim()
-        var message = document.getElementsByName('message').value.trim()
-        console.log(name);
-        var regEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
-		var regPhone = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im;
-        if (name==null) {
-			document.getElementById('name-error').innerHTML='Please enter your name'
-            return false
-		}
-        if(email==null){
-            document.getElementById('email-error').innerHTML='Please enter email'
-            return false
-        }else if(!regEmail.test(email)){
-            document.getElementById('email-error').innerHTML='Please enter a valid email'
-            return false
-        }
-        if (phone==null) {
-			document.getElementById('phone-error').innerHTML='Please enter your phone number'
-            return false
-		}else if(!regPhone.test(phone)){
-            document.getElementById('phone-error').innerHTML='Please enter a valid phone number'
-            return false
-        }
-        if (subject==null) {
-			document.getElementById('subject-error').innerHTML='Please enter subject'
-            return false
-		}
-        if (message==null) {
-			document.getElementById('message-error').innerHTML='Please enter message'
-            return false
-		}
-        
-    }
-  </script>
+ 
 
     <script src="assets/vendors/jquery/jquery-3.6.0.min.js"></script>
     <script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
